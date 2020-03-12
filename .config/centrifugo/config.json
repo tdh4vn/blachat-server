@@ -1,0 +1,31 @@
+{
+  "secret": "redbulll",
+  "api_key": "key",
+  "anonymous": true,
+  "publish": true,
+  "presence": true,
+  "join_leave": true,
+  "history_size": 100,
+  "history_lifetime": 30,
+  "admin_password": "password",
+  "admin_secret": "secret",
+  "admin_web_path": "admin",
+  "history_recover": true,
+  "grpc_api": true,
+  "prometheus": true,
+  "namespaces": [
+    {
+      "name": "private",
+      "publish": true,
+      "anonymous": true,
+      "history_size": 10,
+      "history_lifetime": 300,
+      "history_recover": true
+    },
+    {
+      "name": "gossips",
+      "presence": true,
+      "join_leave": true
+    }
+  ]
+}
